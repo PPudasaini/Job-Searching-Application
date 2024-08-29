@@ -9,8 +9,8 @@ load_dotenv(dotenv_path=dotenv_path)
 
 SERP_API_KEY = os.getenv("SERP-API-KEY")
 
-
-def get_jobs_24h():
+#Getting Jobs from google search using Serp API
+def get_google_jobs_24h():
     params = {
         "engine": "google_jobs",
         "q": "Junior Web Developer",
@@ -27,4 +27,4 @@ def get_jobs_24h():
 
 
 if __name__ == '__main__':
-    get_jobs_24h()
+    get_google_jobs_24h()
